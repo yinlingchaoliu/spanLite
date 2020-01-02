@@ -34,8 +34,18 @@ public class SpanLite {
     }
 
     //设置超级span，用来特殊处理
-    public SpanLite setSpan(SpannableStringBuilder spanBuilder, Object what, int start, int end, int flags) {
-        Util.setSpan( spanBuilder, what, start, end, flags );
+    public SpanLite setSpan(Object what, int start, int end, int flags) {
+
+        int length = spanBuilder.length();
+
+        if (end > length){
+            end = length;
+        }
+
+        if (end >= start){
+            Util.setSpan( spanBuilder, what, start, end, flags );
+        }
+
         return this;
     }
 

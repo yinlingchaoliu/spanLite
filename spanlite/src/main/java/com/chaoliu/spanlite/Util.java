@@ -23,7 +23,7 @@ import android.widget.TextView;
  * @author chentong
  * @date:2020-1-2
  */
-public class Util {
+final class Util {
 
     //图片置换
     public static ImageSpan drawImageSpan(Context context, @DrawableRes  int drawableRes){
