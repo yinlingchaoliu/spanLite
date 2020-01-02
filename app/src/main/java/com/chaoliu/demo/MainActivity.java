@@ -25,15 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
         spanTv = findViewById( R.id.spanTv );
-        SpanLite.with( spanTv )
 
+        SpanLite.with( spanTv )
                 .append( SpanBuilder.Builder( "你好小妹" ).setOnClick( new SpanBuilder.Listerner() {
                     @Override
                     public void onClick(View widget) {
                         Toast.makeText( MainActivity.this, "张三丰也会下山", Toast.LENGTH_SHORT ).show();
                     }
                 } ).drawTypeFaceBold().build() )
-
                 .append( SpanBuilder.Builder( "kakakakak" ).setOnClick( new SpanBuilder.Listerner() {
                     @Override
                     public void onClick(View widget) {
@@ -44,63 +43,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View widget) {
                         Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "开开开开开开户协议" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
-                    }
-                } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
-                        .build()  )
-                .append(SpanBuilder.Builder( "《开户协议》" ).setOnClick( new SpanBuilder.Listerner() {
-                    @Override
-                    public void onClick(View widget) {
-                        Toast.makeText( MainActivity.this, "协议就要花钱", Toast.LENGTH_SHORT ).show();
-
                     }
                 } ).drawTextColor( Color.BLUE ).drawTextBackgroundColor( Color.YELLOW ).drawTypeFaceBold().drawTextSize( 60 )
                         .build()  )
