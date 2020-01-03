@@ -26,5 +26,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.+'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation project(':spanlite')
+//    implementation project(':spanlite')
+    implementation 'com.github.yinlingchaoliu:spanLite:0.0.1'
 }

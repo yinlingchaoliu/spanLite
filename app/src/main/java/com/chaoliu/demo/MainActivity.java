@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView( R.layout.activity_main );
         spanTv = findViewById( R.id.spanTv );
 
+        //演示所有方法示例
         SpannableStringBuilder spanBuilder = SpanBuilder.Builder( "spanBuilder方法" ) //传入文字
                 .drawTextBackgroundColor( Color.YELLOW )//设置文字背景色
                 .drawTextBackgroundColor( "#000000" )
@@ -66,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                                  }
                              }
                 ).build();//创建
-
 
         SpanLite.with( spanTv )
                 .append( SpanBuilder.Builder( "你好小妹" ).build() )
